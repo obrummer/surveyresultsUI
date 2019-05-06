@@ -1,13 +1,86 @@
 import React, { Component } from 'react';
-import TableSection from './sections/TableSection';
-import ChartSection2 from './sections/ChartSection2';
+import MiddleSection from './sections/MiddleSection';
 import axios from 'axios'
 
 class DashboardPage extends Component {
   constructor(props){
     super(props)
     this.state = {
-      results: []
+      results: [{
+        id: 1,
+        created: "2019-04-25T06:20:42.405Z",
+        question1: "Administration",
+        question11: 0,
+        question12: 1,
+        question13: 0,
+        question14: 1,
+        question15: 1,
+        question16: 0,
+        question17: 1,
+        question18: 0,
+        question19: 1,
+        question20: 0
+        },
+        {
+          id: 2,
+          created: "2019-04-25T06:20:42.405Z",
+          question1: "Investments",
+          question11: 0,
+          question12: 1,
+          question13: 0,
+          question14: 1,
+          question15: 1,
+          question16: 0,
+          question17: 1,
+          question18: 0,
+          question19: 1,
+          question20: 0
+          },
+          {
+            id: 3,
+            created: "2019-04-25T06:20:42.405Z",
+            question1: "Marketing",
+            question11: 0,
+            question12: 1,
+            question13: 0,
+            question14: 1,
+            question15: 1,
+            question16: 0,
+            question17: 1,
+            question18: 0,
+            question19: 1,
+            question20: 0
+            },
+            {
+              id: 4,
+              created: "2019-04-25T06:20:42.405Z",
+              question1: "Operations",
+              question11: 0,
+              question12: 1,
+              question13: 0,
+              question14: 1,
+              question15: 1,
+              question16: 0,
+              question17: 1,
+              question18: 0,
+              question19: 1,
+              question20: 0
+              },
+              {
+                id: 5,
+                created: "2019-04-25T06:20:42.405Z",
+                question1: "Sales",
+                question11: 0,
+                question12: 1,
+                question13: 0,
+                question14: 1,
+                question15: 1,
+                question16: 0,
+                question17: 1,
+                question18: 0,
+                question19: 1,
+                question20: 0
+                }]
     }
   }
   
@@ -16,14 +89,15 @@ class DashboardPage extends Component {
     .then(json => {
       const results = json.data;
       this.setState({results});
+      console.log(results)
     })
+    .catch(err => console.log(err))
   }
-
   render () {
+
   return (
     <React.Fragment>
-      <ChartSection2 />
-      <TableSection results={this.state.results}/>
+      <MiddleSection results={this.state.results} />
     </React.Fragment>
   )
 }

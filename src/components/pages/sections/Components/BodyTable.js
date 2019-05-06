@@ -1,0 +1,103 @@
+import React, { useState } from 'react';
+import { MDBCard, MDBCardBody, MDBTable, MDBTableBody, MDBTableHead, MDBRow, MDBCol, MDBCardHeader } from 'mdbreact';
+
+const BodyTable = ({ totalResults, totalAdministrationResults, totalInvestmentsResults, totalMarketingResults, totalSalesResults, totalOperationsResults }) => {
+    
+
+    return (
+        <MDBTableBody>
+            <tr>
+                <td>1</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>{totalSalesResults[0]}</td>
+                <td>{totalResults[0]}</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td>66</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>45</td>
+                <td>55</td>
+                <td>43</td>
+                <td>54</td>
+                <td>67</td>
+                <td></td>
+            </tr>
+        </MDBTableBody>
+    )
+}
+
+export default BodyTable;

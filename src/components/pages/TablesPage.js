@@ -1,17 +1,23 @@
-import React from 'react'
-import { MDBRow, MDBCol } from 'mdbreact';
+import React from "react";
+import fakeData from '../assets/fakeData';
+import SecMiddleSection from './sections/SecMiddleSection';
 
-const TablesPage =  () => {
-  return (
-    <>
-      <MDBRow>
-      <MDBCol md="12">
-      <h1>Content</h1>
-      </MDBCol>
+
+class TablesPage extends React.Component {
+  constructor() {
+    super()
+    
+          }
         
-    </MDBRow>
-    </>
-  )
+
+  render() {
+
+    return (
+      <React.Fragment>
+        <SecMiddleSection fakeData={fakeData} />
+      </React.Fragment>
+    );
+  }
 }
 
 export default TablesPage;
